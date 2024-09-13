@@ -1,0 +1,48 @@
+<div class="container bg-info text-dark mt-2 br-5">
+  <div class="row custom justify-content-center">
+    <h3>Registration Form</h3>
+    <hr>
+    <div class="col-8">
+      <form class="row g-3" #myform="ngForm" (ngSubmit)="onSubmit()" >
+        <div class="col-md-12">
+          <label class="form-label">Name</label>
+          <input type="fName"  class="form-control" name="fName" ngModel required>
+        </div>
+        <div class="col-md-12">
+          <label class="form-label">Last Name</label>
+          <input type="lName" class="form-control" name="lName" ngModel>
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Email</label>
+          <input type="email" class="form-control" name="email" ngModel>
+        </div>
+        <div class="col-md-12">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select" name="satate" ngModel>
+            <option selected>Choose...</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Andrapradesh">Andrapradesh</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="gridCheckFemale" name="female" value="female" ngModel>
+            <label class="form-check-label" for="gridCheckFemale">
+              Female
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" id="gridCheckMale" name="male" value="male" ngModel>
+            <label class="form-check-label" for="gridCheckMale">
+              Male
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary w-100 mb-4">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
